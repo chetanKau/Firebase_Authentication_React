@@ -14,7 +14,7 @@ function SignIn() {
     <div>
        <input ref={refEmail} type='email' placeholder='Emai ID' />
             <input ref={refPassword} type='password' placeholder='Password' />
-            <button type="Submit" onClick={() => {
+            <button style={{backgroundColor:"green"}} type="Submit" onClick={() => {
                 const email = refEmail.current.value;
                 const password = refPassword.current.value;
                 signInWithEmailAndPassword(auth, email, password).then((userData) => {
